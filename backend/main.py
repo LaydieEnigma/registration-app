@@ -22,13 +22,13 @@ api_router = APIRouter(prefix="/api")
 # CORS middleware configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://13.50.15.164:9090", "http://localhost:9090"],  # Frontend URL
+    allow_origins=["http://44.208.34.84:9090", "http://localhost:9090"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Security configuration
+    # Security configuration
 SECRET_KEY = os.getenv("SECRET_KEY", "your-secret-key")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
